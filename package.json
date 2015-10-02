@@ -1,0 +1,28 @@
+{
+  "name": "@roanixs/api",
+  "version": "0.0.1",
+  "description": "Simple wrapper / configuration module for interacting with APIs ",
+  "main": "dist/main.min.js",
+  "scripts": {
+    "docs": "esdoc -c esdoc.json",
+    "dev": "watchify -t babelify src/Api.js -o dist/main.js -dv",
+    "build": "browserify -t babelify  --full-paths src/Api.js | uglifyjs -mc warnings=false > dist/main.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "fetch",
+    "es6"
+  ],
+  "author": "Joani COUMA",
+  "license": "ISC",
+  "dependencies": {
+    "es6-promise": "^3.0.2",
+    "whatwg-fetch": "^0.9.0"
+  },
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.2.0",
+    "watchify": "^3.4.0"
+  }
+}
