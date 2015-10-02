@@ -1,6 +1,6 @@
 {
   "name": "roanixs-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple wrapper / configuration module for interacting with APIs ",
   "main": "dist/index.js",
   "scripts": {
