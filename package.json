@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "docs": "esdoc -c esdoc.json",
-    "dev": "babel --modules common src --watch --out-file dist/index.js",
-    "compile": "babel --modules common src --out-file dist/index.min.js",
+    "dev": "babel --optional runtime --modules common src --watch --out-file dist/index.js",
+    "compile": "babel --optional runtime --modules common src --out-file dist/index.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,10 +17,10 @@
   "author": "Joani COUMA",
   "license": "ISC",
   "dependencies": {
-    "es6-promise": "^3.0.2",
     "whatwg-fetch": "^0.9.0"
   },
   "devDependencies": {
-    "babel": "^5.8.23"
+    "babel": "^5.8.23",
+    "babel-runtime": "^5.8.25"
   }
 }
